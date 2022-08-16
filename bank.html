@@ -15,8 +15,9 @@
         <section class="mt-12">
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-lime-400 p-4  rounded-md">
-                    <h4 class="font-medium ">Deposite</h4>
-                    <h2 class="text-3xl">$00</h2>
+                    <h4 class="font-medium ">Deposit</h4>
+                    <h2 class="text-3xl">$<span id="deposit-total">00</span>
+                    </h2>
                 </div>
                 <div class="bg-cyan-300 p-4  rounded-md">
                     <h4 class="font-medium ">Withdraw</h4>
@@ -35,20 +36,21 @@
                     <div class="bg-purple-400 p-5 rounded-md">
                         <h2 class="text-2xl">Please Deposit</h2>
                         <div class="p-7">
-                            <input class="w-9/12 block mb-2 px-3 " type="number" placeholder="$ amount you want to deposit">
-                            <button class="bg-indigo-700 rounded-md px-6 py-1 mt-2 text-sm">Deposit</button>
+                            <input class="w-9/12 block mb-2 px-3 text-black " type="number" id="deposit-field" placeholder="$ amount you want to deposit">
+                            <button id="btn-deposit" class="bg-indigo-700 rounded-md px-6 py-1 mt-2 text-sm">Deposit</button>
                         </div>
                     </div>
                     <div class="bg-violet-500 p-5 rounded-md">
                         <h2 class="text-2xl">Please Withdraw</h2>
                         <div class="p-7">
-                            <input class="w-9/12 block mb-2 px-3 " type="number" placeholder="$ amount you want to withdraw">
-                            <button class="bg-indigo-700 rounded-md px-6 py-1 mt-2 text-sm">Deposit</button>
+                            <input class="w-9/12 block mb-2 px-3 text-black" type="number" placeholder="$ amount you want to withdraw">
+                            <button id="btn-withdraw" class="bg-indigo-700 rounded-md px-6 py-1 mt-2 text-sm">Withdraw</button>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
     </div>
+    <script src="js/deposit.js"></script>
 </body>
 </html>
