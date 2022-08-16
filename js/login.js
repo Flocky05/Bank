@@ -14,8 +14,8 @@ document.getElementById('btn-submit').addEventListener('click',function(){
     // Do not verify email password on the clien side
     // step-4 :varify email and password
     if(email==='mababa123@gmail.com' && password==='bangladesh'){
-        console.log('Valied password');
+        window.location.href='bank.html';
     }else{
-        console.log("Try again");
+        alert("Pleas Enter Valied password");
     }
 })
